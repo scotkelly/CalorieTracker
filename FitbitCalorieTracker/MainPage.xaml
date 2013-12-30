@@ -48,10 +48,10 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <TextBlock x:Name="FitbitUserNameLabel" HorizontalAlignment="Left" Height="39" Margin="25,28,0,0" TextWrapping="Wrap" Text="User name:" VerticalAlignment="Top" Width="223"/>
-            <TextBox x:Name="UserNameField" HorizontalAlignment="Left" Height="63" Margin="10,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="402" TextChanged="UserNameField_TextChanged"/>
-            <TextBlock x:Name="PasswordLabel" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Margin="25,121,0,0"/>
-            <PasswordBox x:Name="PasswordField" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="402"/>
-            <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="73" Margin="276,220,0,0" VerticalAlignment="Top" Width="136"/>
+            <TextBox x:Name="UserNameField" HorizontalAlignment="Left" Height="78" Margin="10,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="402" TextChanged="UserNameField_TextChanged"/>
+            <TextBlock x:Name="PasswordLabel" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Margin="25,131,0,0"/>
+            <PasswordBox x:Name="PasswordField" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Width="402" Height="78"/>
+            <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="73" Margin="276,242,0,0" VerticalAlignment="Top" Width="136" Click="LoginButton_Click"/>
 
         </Grid>
 

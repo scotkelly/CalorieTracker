@@ -8,6 +8,8 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using FitbitCalorieTracker.Resources;
+using Microsoft.Xna.Framework;
+
 
 namespace FitbitCalorieTracker
 {
@@ -20,10 +22,33 @@ namespace FitbitCalorieTracker
 
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+            SetupLiveTile();
+        }
+
+        private void SetupLiveTile()
+        {
+            var tile = ShellTile.ActiveTiles.First();
+            if (tile == null) return;
+
+            var tileData = new IconicTileData()
+            {
+                BackgroundColor = System.Windows.Media.Colors.Brown,
+                Count = 0,
+                IconImage = new Uri("/Assets/Tiles/IconicTileMediumLarge.png", UriKind.Relative),
+                SmallIconImage = new Uri("/Assets/Tiles/IconicTileSmall.png", UriKind.Relative),
+                Title = "492 calories left"
+            };
+            tile.Update(tileData);
         }
 
         private void UserNameField_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+        }
+
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            
 
         }
 
