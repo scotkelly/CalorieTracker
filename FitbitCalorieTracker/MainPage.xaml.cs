@@ -28,30 +28,22 @@ namespace FitbitCalorieTracker
         private void SetupLiveTile()
         {
             var tile = ShellTile.ActiveTiles.First();
+            int caloriePercentLeft = 32;
             if (tile == null) return;
 
             var tileData = new IconicTileData()
             {
-                BackgroundColor = System.Windows.Media.Colors.Brown,
-                Count = 0,
+                BackgroundColor = System.Windows.Media.Colors.Orange,
+                Count = caloriePercentLeft,
                 IconImage = new Uri("/Assets/Tiles/IconicTileMediumLarge.png", UriKind.Relative),
                 SmallIconImage = new Uri("/Assets/Tiles/IconicTileSmall.png", UriKind.Relative),
-                Title = "492 calories left"
+                Title = "492 calories left",
+                WideContent1 = "492 calories left"
             };
             tile.Update(tileData);
         }
 
-        private void UserNameField_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-
-        }
-
+  
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{
