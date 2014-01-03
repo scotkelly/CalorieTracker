@@ -2,3 +2,5 @@
 
 Started by: Scot Kelly
 Email: scot_kelly@hotmail.com
+
+All projects in this solution are covered under the Apache V2 license, available in the LICENSE-2.0.txt file.
