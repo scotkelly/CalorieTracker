@@ -141,6 +141,7 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="LICENSE-2.0.txt" />
     <None Include="README.MD" />
   </ItemGroup>
   <ItemGroup>
